@@ -38,6 +38,7 @@ const useStyles = makeStyles(theme => ({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    
     addContactButton: {
      position: 'Fixed',
      bottom : '0px',
@@ -45,9 +46,17 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(3)
     },
 
+addDeleteButton: {
+  position: 'Fixed',
+  bottom: 0,
+  right: 0,
+  margin: theme.spacing(10)
+},
+
     inputRoot: {
       color: 'inherit',
     },
+    
     inputInput: {
       padding: theme.spacing(1, 1, 1, 7),
       transition: theme.transitions.create('width'),

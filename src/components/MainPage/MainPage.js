@@ -9,12 +9,13 @@ import SearchIcon from '@material-ui/icons/Search';
 import useStyles from './MainPageStyles';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
+import DeleteIcon from '@material-ui/icons/Delete';
+import Button from '@material-ui/core/Button';
 
 
 
 export default function SearchAppBar() {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -28,7 +29,7 @@ export default function SearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Rohini
+            Contacts
           </Typography>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
@@ -46,9 +47,12 @@ export default function SearchAppBar() {
         </Toolbar>
       </AppBar>
 
-      <Fab color="primary" aria-label="add" className={[classes.fab],classes.addContactButton}>
+      <Fab color="primary" aria-label="add" className={[classes.fab , classes.addContactButton]}>
   <AddIcon />
 </Fab>
+
+<Button variant="contained" color="secondary" className={[classes.button, classes.addDeleteButton]} startIcon={<DeleteIcon />}>
+      </Button>
     </div>
   );
 }

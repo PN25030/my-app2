@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import 'normalize.css'
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
-import App from './components/app/App';
+/* import App from './components/app/App'; */
 import * as serviceWorker from './serviceWorker';
 import MainPage from './components/MainPage/MainPage';
 import CreatePage from './components/CreatePage/CreatePage';
